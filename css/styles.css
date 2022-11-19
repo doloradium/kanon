@@ -548,6 +548,7 @@ p {
   background: -webkit-gradient(linear, left bottom, left top, from(#00000090), to(#00000090)), url(../img/hero.jpg) center center/cover no-repeat;
   background: linear-gradient(360deg, #00000090, #00000090), url(../img/hero.jpg) center center/cover no-repeat;
   height: 100vh;
+  max-height: 2160px;
   margin-bottom: 100px;
 }
 

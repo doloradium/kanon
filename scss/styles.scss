@@ -56,6 +56,7 @@ p {
 .header {
     background: linear-gradient(360deg, #00000090, #00000090), url(../img/hero.jpg) center center / cover no-repeat;
     height: 100vh;
+    max-height: 2160px;
     margin-bottom: 100px;
     &__top {
         display: flex;
