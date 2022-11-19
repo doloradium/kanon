@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <title>Канон</title>
 </head>
 <body>
     <header class="header">
         <div class="wrapper">
             <div class="header__top">
-                <div class="header__logo">
-                    <a class="header__link" href="#">
+                <div class="logo__container">
+                    <a class="logo__link" href="#">
                         <img class="logo" src="img/logo.png" alt="Logo">
                     </a>
                 </div>
@@ -51,9 +52,78 @@
     </header>
     <main class="main">
         <div class="wrapper">
+            <div class="categories">
+                <div class="main__heading main__heading-right">
+                    <h4 class="heading__article heading__article-right">НАШИ УСЛУГИ</h4>
+                    <img class="arrow" src="img/arrow-left.png" alt="Arrow">
+                </div>
+                <div class="categories__grid">
+                    <div class="categories__card">
+                        <a class="categories__heading" href="#">РАДИО</a>
+                        <ul class="categories__list">
+                            <li class="categories__item">
+                                <a class="categories__link" href="#">консалтинг</a>
+                            </li>
+                            <li class="categories__item">
+                                <a class="categories__link" href="#">измерения радиации</a>
+                            </li>
+                            <li class="categories__item">
+                                <a class="categories__link" href="#">изменения уровня радиации</a>
+                            </li>
+                            <li class="categories__item">
+                                <a class="categories__link" href="#">санитарно-эпидемиологическая защита</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="categories__card">
+                        <a class="categories__heading" href="#">ЭКО</a>
+                        <ul class="categories__list">
+                            <li class="categories__item">
+                                <a class="categories__link" href="#">исследования</a>
+                            </li>
+                            <li class="categories__item">
+                                <a class="categories__link" href="#">санитарно-защитная зона</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="categories__card">
+                        <a class="categories__heading" href="#">ПРТО</a>
+                        <ul class="categories__list">
+                            <li class="categories__item">
+                                <a class="categories__link" href="#">СЭЗ</a>
+                            </li>
+                            <li class="categories__item">
+                                <a class="categories__link" href="#">измерение воздействия на ОС</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="categories__card">
+                        <a class="categories__heading" href="#">ПАТ</a>
+                        <ul class="categories__list">
+                            <li class="categories__item">
+                                <a class="categories__link" href="#">СЭЗ</a>
+                            </li>
+                            <li class="categories__item">
+                                <a class="categories__link" href="#">оценка воздействия на ОС</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="categories__card">
+                        <a class="categories__heading" href="#">ПРИЕМКА</a>
+                        <ul class="categories__list">
+                            <li class="categories__item">
+                                <a class="categories__link" href="#">измерения</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="categories__card">
+                        <a class="categories__heading" href="#">КОНТАКТЫ</a>
+                    </div>
+                </div>
+            </div>
             <div class="about">
                 <div class="main__heading">
-                    <img class="arrow"  src="img/arrow.png" alt="Arrow">
+                    <img class="arrow" src="img/arrow-right.png" alt="Arrow">
                     <h4 class="heading__article">О НАШЕЙ КОМПАНИИ</h4>
                 </div>
                 <div class="about__content">
@@ -67,7 +137,7 @@
                     </div>
                     <div class="about__block">
                         <p class="about__paragraph">
-                            омпания «КАНОН» - инжиниринговая компания, которая более 10 лет выполняет комплекс работ по санитарии, гигиене и экологии. Составной частью компании является Испытательно-лабораторный центр, оснащённый передовыми средствами измерений и исследований, что позволяет проводить оперативный и высокопрофессиональный лабораторный и инструментальный контроль ионизирующих, неионизирующих и химических факторов, в том числе воздуха помещений, воздуха окружающей среды и промышленных выбросов более чем по 200 показателям, в т.ч. суммарные углеводороды, углекислый газ, метан, фенол, формальдегид, ртуть и т.д. 
+                            Компания «КАНОН» - инжиниринговая компания, которая более 10 лет выполняет комплекс работ по санитарии, гигиене и экологии. Составной частью компании является Испытательно-лабораторный центр, оснащённый передовыми средствами измерений и исследований, что позволяет проводить оперативный и высокопрофессиональный лабораторный и инструментальный контроль ионизирующих, неионизирующих и химических факторов, в том числе воздуха помещений, воздуха окружающей среды и промышленных выбросов более чем по 200 показателям, в т.ч. суммарные углеводороды, углекислый газ, метан, фенол, формальдегид, ртуть и т.д. 
                         </p>
                         <p class="about__paragraph">
                             Также мы проводим контроль уровей шума, вибрации, электромагнитных полей, проводим выявление и анализ радиоактивных источников техногенных (дефектоскопическая и рентгеновская техника) и природных. Для решения задач в области санитарии мы выполняем инспекционный контроль проектной и иной документации, видов деятельности (работ, услуг) для организаций различного профиля и частных лиц.
@@ -77,5 +147,58 @@
             </div>
         </div>
     </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__top">
+                <ul class="footer__list">
+                    <li class="footer__contacts">129626, г. Москва, Проспект Мира, дом 106</li>
+                    <li class="footer__contacts">129128, г. Москва, улица Бажова, дом 24</li>
+                    <li class="footer__contacts">+7 (800) 555-35-35</li>
+                    <li class="footer__contacts">damn@boy.ru</li>
+                </ul>
+                <ul class="footer__navbar">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            РАДИО
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            ЭКО
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            ПРТО
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            ПАТ
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            ПРИЕМКА
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            КОНТАКТЫ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__bottom">
+                <div class="logo__container">
+                    <a class="logo__link" href="#">
+                        <img class="logo logo__footer" src="img/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <p class="footer__paragraph">2022 © Все права защищены. Дизайн — </p>
+                <a href="https://github.com/doloradium" class="footer__paragraph">doloradium</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -536,6 +536,10 @@ p {
   width: 100px;
 }
 
+.logo__footer {
+  width: 60px;
+}
+
 .arrow {
   height: 100%;
 }
@@ -641,6 +645,11 @@ p {
   margin-left: 30px;
 }
 
+.heading__article-right {
+  margin-left: 0;
+  margin-right: 30px;
+}
+
 .about {
   margin-bottom: 100px;
 }
@@ -695,4 +704,107 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.main__heading-right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.categories {
+  margin-bottom: 200px;
+}
+
+.categories__grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 30px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.categories__card {
+  border: #000000 1px solid;
+  min-height: 200px;
+  border-radius: 5px;
+  padding: 15px 15px 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.categories__heading {
+  font-weight: 700;
+}
+
+.categories__link {
+  color: #000000;
+}
+
+.categories__heading {
+  color: #000000;
+}
+
+.footer {
+  background: #212121;
+  padding: 30px 0 0;
+}
+
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: #464A4C solid 1px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.footer__contacts {
+  color: #FFFFFF;
+  list-style: none;
+  margin-left: -30px;
+  font-size: 14px;
+}
+
+.footer__navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  font-size: 14px;
+}
+
+.footer__item {
+  list-style: none;
+  font-weight: 700;
+}
+
+.footer__bottom {
+  margin: auto;
+  color: #FFFFFF;
+  width: 440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__paragraph {
+  font-size: 14px;
 }
