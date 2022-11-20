@@ -540,7 +540,18 @@ p {
   position: fixed;
   bottom: 70px;
   right: 70px;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.button__top-hidden {
   display: none;
+  cursor: default;
+}
+
+.button__top-opacity {
+  opacity: 0;
+  cursor: default;
 }
 
 .button__image {

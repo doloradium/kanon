@@ -8,8 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="js/buttonUp.js"></script>
     <title>Канон</title>
 </head>
 <body>
@@ -57,7 +55,7 @@
         </div>
     </header>
     <main class="main">
-        <a href="#" class="button__top">
+        <a href="#" id="buttonUp" class="button__top button__top-hidden button__top-opacity">
             <img class="button__image" src="img/triangle.png" alt="Arrow up">
         </a>
         <div class="wrapper">
@@ -248,5 +246,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/buttonUp.js"></script>
 </body>
 </html>

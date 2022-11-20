@@ -48,7 +48,15 @@ p {
         position: fixed;
         bottom: 70px;
         right: 70px;
-        display: none;
+        transition: all 0.5s linear;
+        &-hidden {
+            display: none;
+            cursor: default;
+        }
+        &-opacity {
+            opacity: 0;
+            cursor: default;
+        }   
     }
     &__image {
         height: 20px;
