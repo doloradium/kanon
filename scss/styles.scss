@@ -132,7 +132,7 @@ p {
 }
 
 .about {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     &__content {
         display: grid;
         gap: 30px;
@@ -154,7 +154,7 @@ p {
         width: 30%;
         text-align: center;
         border-right: #000000 1px solid;
-        padding-right: 20px;
+        padding-right: 30px;
         align-items: center;
         margin-bottom: 30px;
         &:last-child {
@@ -194,11 +194,63 @@ p {
     &__heading {
         font-weight: 700;
     }
+    &__list {
+        list-style: none;
+    }
     &__link {
-        color: #000000;
+        color: #808080;
+    }
+    &__item {
+        &::before {
+            content: "\2022";
+            color: #808080;
+            font-weight: 700;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1.5em;
+        }
     }
     &__heading {
         color: #000000;
+    }
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    &__time {
+        color: #808080;
+    }
+    &__weekend {
+        color: #FF0000;
+    }
+    &__content {
+        width: 50%;
+        padding: 0 80px;
+    }
+    &__input {
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 15px;
+        border: none;
+        border-bottom: #000000 solid 1px;
+        outline: none;
+        &:last-of-type {
+            margin-bottom: 60px;
+        }
+    }
+    &__paragraph {
+        font-size: 16px;
+    }
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        border-bottom:#000000 solid 1px;
+        padding: 15px;
+        &:last-child {
+            border-bottom: none;
+        }
     }
 }
 
