@@ -39,6 +39,23 @@ p {
         color: #000000;
         transition: 0.5s;
     }
+    &__top {
+        background: #FF0000;
+        height: 60px;
+        width: 60px;
+        border-radius: 100px;
+        display: block;
+        position: fixed;
+        bottom: 70px;
+        right: 70px;
+        display: none;
+    }
+    &__image {
+        height: 20px;
+        justify-content: space-between;
+        margin-left: 18px;
+        margin-top: 17px;
+    }
 }
 
 .logo {
