@@ -505,6 +505,22 @@ p {
   font-size: 18px;
 }
 
+.hidden {
+  display: none;
+  cursor: default;
+}
+
+.opacity-0 {
+  opacity: 0;
+  cursor: default;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.z-index-99 {
+  z-index: 99;
+}
+
 .wrapper {
   max-width: 1180px;
   padding: 0 20px;
@@ -533,6 +549,41 @@ p {
   transition: 0.5s;
 }
 
+.button__container {
+  position: fixed;
+  bottom: 50vh;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 130px;
+}
+
+.button__contacts {
+  height: 60px;
+  width: 60px;
+  border-radius: 0 100px 100px 0;
+  display: block;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.button__contacts-whatsapp {
+  background: #128C7E;
+}
+
+.button__contacts-telegram {
+  background: #4995BE;
+}
+
 .button__contacts {
   font-size: 16px;
 }
@@ -553,18 +604,8 @@ p {
   position: fixed;
   bottom: 70px;
   right: 70px;
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear;
-}
-
-.button__top-hidden {
-  display: none;
-  cursor: default;
-}
-
-.button__top-opacity {
-  opacity: 0;
-  cursor: default;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .button__image {
@@ -574,6 +615,11 @@ p {
           justify-content: space-between;
   margin-left: 18px;
   margin-top: 17px;
+}
+
+.button__image-contacts {
+  width: 30px;
+  margin: 14px 11px;
 }
 
 .logo {
@@ -634,7 +680,6 @@ p {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  display: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }

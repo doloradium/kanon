@@ -22,7 +22,7 @@
                 <nav class="header__navbar">
                     <div href="#" class="dropdown">
                         <a class="dropdown__button">ЭКО</a>
-                        <div class="dropdown__content">
+                        <div class="dropdown__content hidden opacity-0 z-index-99">
                             <div class="dropdown__arrow"></div>
                             <div class="dropdown__block">
                                 <a class="dropdown__link" href="#">Cанитарно-защитная зона</a>
@@ -32,7 +32,7 @@
                     </div>
                     <div href="#" class="dropdown">
                         <a class="dropdown__button">РАДИО</a>
-                        <div class="dropdown__content">
+                        <div class="dropdown__content hidden opacity-0 z-index-99">
                             <div class="dropdown__arrow"></div>
                             <div class="dropdown__block">
                                 <a class="dropdown__link" href="#">Измерение радиации</a>
@@ -44,7 +44,7 @@
                     </div>
                     <div href="#" class="dropdown">
                         <a class="dropdown__button">ПРТО</a>
-                        <div class="dropdown__content">
+                        <div class="dropdown__content hidden opacity-0 z-index-99">
                             <div class="dropdown__arrow"></div>
                             <div class="dropdown__block">
                                 <a class="dropdown__link" href="#">СЭЗ</a>
@@ -54,7 +54,7 @@
                     </div>
                     <div href="#" class="dropdown">
                         <a class="dropdown__button">ПАТ</a>
-                        <div class="dropdown__content">
+                        <div class="dropdown__content hidden opacity-0 z-index-99">
                             <div class="dropdown__arrow"></div>
                             <div class="dropdown__block">
                                 <a class="dropdown__link" href="#">СЭЗ</a>
@@ -64,7 +64,7 @@
                     </div>
                     <div href="#" class="dropdown">
                         <a class="dropdown__button">ПРИЕМКА</a>
-                        <div class="dropdown__content">
+                        <div class="dropdown__content hidden opacity-0 z-index-99">
                             <div class="dropdown__arrow"></div>
                             <div class="dropdown__block">
                                 <a class="dropdown__link" href="#">Измерения</a>
@@ -103,9 +103,17 @@
         </div>
     </header>
     <main class="main">
-        <a href="#" id="buttonUp" class="button__top button__top-hidden button__top-opacity">
+        <a href="#" id="buttonUp" class="button__top hidden opacity-0">
             <img class="button__image" src="img/triangle.png" alt="Arrow up">
         </a>
+        <div class="button__container">
+            <a href="https://t.me/dolori" class="button__contacts button__contacts-telegram">
+                <img class="button__image-contacts" src="img/telegram.png" alt="Telegram">
+            </a>
+            <a href="https://t.me/dolori" class="button__contacts button__contacts-whatsapp">
+                <img class="button__image-contacts" src="img/whatsapp.png" alt="Whatsapp">
+            </a>
+        </div>
         <div class="wrapper">
             <section class="about">
                 <div class="main__heading">
@@ -226,5 +234,7 @@
         </div>
     </footer>
     <script src="js/buttonUp.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/contacts.js"></script>
 </body>
 </html>

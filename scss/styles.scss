@@ -18,6 +18,20 @@ p {
     font-size: 18px;
 }
 
+.hidden {
+    display: none;
+    cursor: default;
+}
+.opacity-0 {
+    opacity: 0;
+    cursor: default;
+    transition: all 0.2s linear; 
+}  
+
+.z-index-99 {
+    z-index: 99;
+}
+
 .wrapper {
     max-width: 1180px;
     padding: 0 20px;
@@ -41,6 +55,28 @@ p {
         color: #000000;
         transition: 0.5s;
     }
+    &__container {
+        position: fixed;
+        bottom: 50vh;
+        transition: all 0.2s linear; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 130px;
+    }
+    &__contacts {
+        height: 60px;
+        width: 60px;
+        border-radius: 0 100px 100px 0;
+        display: block;
+        transition: all 0.2s linear; 
+        &-whatsapp {
+            background: #128C7E;
+        }
+        &-telegram {
+            background: #4995BE;
+        }
+    }
     &__contacts {
         font-size: 16px;
     }
@@ -57,21 +93,17 @@ p {
         position: fixed;
         bottom: 70px;
         right: 70px;
-        transition: all 0.5s linear;
-        &-hidden {
-            display: none;
-            cursor: default;
-        }
-        &-opacity {
-            opacity: 0;
-            cursor: default;
-        }   
+        transition: all 0.2s linear; 
     }
     &__image {
         height: 20px;
         justify-content: space-between;
         margin-left: 18px;
         margin-top: 17px;
+        &-contacts {
+            width: 30px;
+            margin: 14px 11px;
+        }
     }
 }
 
@@ -123,7 +155,6 @@ p {
         margin-top: 10px;
         left: 50%;
         transform: translateX(-50%);
-        display: none;
         transition: 0.5s;
     }
     &__link {
