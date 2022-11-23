@@ -551,7 +551,7 @@ p {
 
 .button__container {
   position: fixed;
-  bottom: 50vh;
+  bottom: 70px;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
   display: -webkit-box;
@@ -567,32 +567,24 @@ p {
   height: 130px;
 }
 
-.button__contacts {
-  height: 60px;
-  width: 60px;
+.button__socials {
   border-radius: 0 100px 100px 0;
   display: block;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
+  padding-right: 10px;
 }
 
-.button__contacts-whatsapp {
+.button__socials-whatsapp {
   background: #128C7E;
 }
 
-.button__contacts-telegram {
+.button__socials-telegram {
   background: #4995BE;
 }
 
 .button__contacts {
   font-size: 16px;
-}
-
-.button__header {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin-right: 0;
 }
 
 .button__top {
@@ -709,11 +701,6 @@ p {
   display: block;
 }
 
-.header {
-  height: 100vh;
-  margin-bottom: 100px;
-}
-
 .header__top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -757,7 +744,7 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
 }
 
 .header__phone {
@@ -770,16 +757,24 @@ p {
   color: #000000;
 }
 
+.header__form {
+  width: 45%;
+}
+
+.header__text {
+  width: 50%;
+}
+
 .header__hero {
-  margin-top: 25vh;
+  margin: 15% 0 20%;
 }
 
 .header__categories {
   display: -ms-grid;
   display: grid;
   gap: 30px;
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
 }
 
 .header__item {
@@ -787,7 +782,7 @@ p {
   border: #000000 solid 1px;
   border-radius: 5px;
   text-align: center;
-  padding: 7px 20px;
+  padding: 20px;
 }
 
 .header__item:hover {
@@ -803,7 +798,7 @@ p {
 }
 
 .heading__subtext-top {
-  color: #000000;
+  color: #FF0000;
   border-radius: 5px;
   font-size: 28px;
   width: -webkit-fit-content;

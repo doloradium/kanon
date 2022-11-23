@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <meta name="viewport" content="1920">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
@@ -80,6 +79,23 @@
                     <a href="mailto:info@kanon-corp.ru" class="header__email">info@kanon-corp.ru</a>
                 </div>
             </div>
+        </div>
+    </header>
+    <main class="main">
+        <a href="#" id="buttonUp" class="button__top hidden opacity-0">
+            <img class="button__image" src="img/triangle.png" alt="Arrow up">
+        </a>
+        <!-- сделать меньше и с выдвижением-->
+        <div id="buttonContacts" class="button__container">
+            <a href="https://t.me/dolori" class="button__socials button__socials-telegram">
+                <img class="button__image-contacts" src="img/telegram.png" alt="Telegram">
+            </a>
+            <a href="https://t.me/dolori" class="button__socials button__socials-whatsapp">
+                <img class="button__image-contacts" src="img/whatsapp.png" alt="Whatsapp">
+            </a>
+        </div>
+        <!-- сделать меньше и с выдвижением-->
+        <div class="wrapper">
             <div class="header__hero">
                 <div class="header__container">
                     <div class="header__main">
@@ -88,7 +104,12 @@
                             <h2 class="heading__subtext-top">Без посредников в собственной лаборатории атестованой росакредитацией</h2>
                             <h3 class="heading__subtext-bottom">Сотрудники с 14-летним опытом, среди них 7 кандидатов наук. Более 800 успешных экспертиз</h3>
                         </div>
-                        <button class="button button__header">ЗАКАЗАТЬ РАСЧЁТ</button>
+                        <div class="header__form">
+                            <p class="contacts__paragraph">Стоимость зависит от площади помещения, свяжитесь с нами удобным вам способом или закажите звонок инженера. </p>
+                            <input class="contacts__input" type="text" placeholder="Введите имя">
+                            <input class="contacts__input" type="text" placeholder="Введите номер телефона">
+                            <button class="button button__contacts button__header">ЗАКАЗАТЬ РАСЧЁТ</button>
+                        </div>
                     </div>
                 </div>
                 <div class="header__categories">
@@ -100,21 +121,6 @@
                     <a href="#" class="header__item">РАДИОЛОГИЯ</a>
                 </div>
             </div>
-        </div>
-    </header>
-    <main class="main">
-        <a href="#" id="buttonUp" class="button__top hidden opacity-0">
-            <img class="button__image" src="img/triangle.png" alt="Arrow up">
-        </a>
-        <div class="button__container">
-            <a href="https://t.me/dolori" class="button__contacts button__contacts-telegram">
-                <img class="button__image-contacts" src="img/telegram.png" alt="Telegram">
-            </a>
-            <a href="https://t.me/dolori" class="button__contacts button__contacts-whatsapp">
-                <img class="button__image-contacts" src="img/whatsapp.png" alt="Whatsapp">
-            </a>
-        </div>
-        <div class="wrapper">
             <section class="about">
                 <div class="main__heading">
                     <img class="arrow" src="img/arrow-right.png" alt="Arrow">
@@ -140,6 +146,12 @@
                 </div>
             </section>
             <section class="contacts">
+                <div class="contacts__content">
+                    <p class="contacts__paragraph">Стоимость зависит от площади помещения, свяжитесь с нами удобным вам способом или закажите звонок инженера. </p>
+                    <input class="contacts__input" type="text" placeholder="Введите имя">
+                    <input class="contacts__input" type="text" placeholder="Введите номер телефона">
+                    <button class="button button__contacts">ЗАКАЗАТЬ РАСЧЁТ</button>
+                </div>
                 <div class="contacts__content">
                     <div class="contacts__block">
                         <div class="contacts__day">Понедельник</div>
@@ -169,12 +181,6 @@
                         <div class="contacts__day contacts__weekend">Воскресенье</div>
                         <div class="contacts__time contacts__weekend">Выходной</div>
                     </div>
-                </div>
-                <div class="contacts__content">
-                    <p class="contacts__paragraph">Стоимость зависит от площади помещения, свяжитесь с нами удобным вам способом или закажите звонок инженера. </p>
-                    <input class="contacts__input" type="text" placeholder="Введите имя">
-                    <input class="contacts__input" type="text" placeholder="Введите номер телефона">
-                    <button class="button button__contacts">ЗАКАЗАТЬ РАСЧЁТ</button>
                 </div>
             </section>
         </div>
@@ -235,6 +241,5 @@
     </footer>
     <script src="js/buttonUp.js"></script>
     <script src="js/dropdown.js"></script>
-    <script src="js/contacts.js"></script>
 </body>
 </html>

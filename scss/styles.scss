@@ -57,19 +57,18 @@ p {
     }
     &__container {
         position: fixed;
-        bottom: 50vh;
+        bottom: 70px;
         transition: all 0.2s linear; 
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: 130px;
     }
-    &__contacts {
-        height: 60px;
-        width: 60px;
+    &__socials {
         border-radius: 0 100px 100px 0;
         display: block;
         transition: all 0.2s linear; 
+        padding-right: 10px;
         &-whatsapp {
             background: #128C7E;
         }
@@ -79,10 +78,6 @@ p {
     }
     &__contacts {
         font-size: 16px;
-    }
-    &__header {
-        height: fit-content;
-        margin-right: 0;
     }
     &__top {
         background: #FF0000;
@@ -179,8 +174,6 @@ p {
 }
 
 .header {
-    height: 100vh;
-    margin-bottom: 100px;
     &__top {
         display: flex;
         justify-content: space-between;
@@ -202,7 +195,7 @@ p {
     &__main {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 20px;
+        margin-bottom: 80px;
     }
     &__phone {
         font-size: 18px;
@@ -212,20 +205,26 @@ p {
         font-size: 12px;
         color: #000000;
     }
+    &__form {
+        width: 45%;
+    }
+    &__text {
+        width: 50%;
+    }
     &__hero {
-        margin-top: 25vh;
+        margin: 15% 0 20%;
     }
     &__categories {
         display: grid;
         gap: 30px;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
     &__item {
         color: #000000;
         border: #000000 solid 1px;
         border-radius: 5px;
         text-align: center;
-        padding: 7px 20px;
+        padding: 20px;
         &:hover {
             border-color: #FF0000;
         }
@@ -239,7 +238,7 @@ p {
     margin-bottom: 20px;
     color: #000000;
     &__subtext-top {
-        color: #000000;
+        color: #FF0000;
         border-radius: 5px;
         font-size: 28px;
         width: fit-content;
