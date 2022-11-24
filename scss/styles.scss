@@ -119,6 +119,27 @@ p {
     height: 100px;
 }
 
+.article {
+    margin-bottom: 200px;
+    margin-top: 200px;
+    &__container {
+        border: 1px solid #000000;
+        border-radius: 5px;
+        padding: 20px 30px;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    &-top {
+        margin-top: -60px;
+        margin-bottom: 100px;
+    }
+    &__item {
+        &:last-child {
+            margin-bottom: -15px;
+        }
+    }
+}
+
 .dropdown {
     float: left;
     position: relative;
@@ -244,12 +265,11 @@ p {
 
 .chain-list {
     display: flex;
-    justify-content: space-between;
     height: 100%;
     margin-bottom: 200px;
     &__stripe {
         margin-left: 9px;
-        margin-right: -9px;
+        margin-right: -10px;
         display: block;
         height:auto;
         width: 1px;
@@ -260,6 +280,22 @@ p {
         margin-bottom: 30px;
         &:last-child {
             margin-bottom: 0;
+        }
+    }
+    &__heading {
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    &__container {
+        width: 100%;
+    }
+    &__list {
+        width: 100%;
+    }
+    &__unit {
+        width: 100%;
+        &:last-child {
+            margin-bottom: -15px;
         }
     }
     &__marker {
@@ -274,9 +310,39 @@ p {
         border-radius: 5px;
         padding: 20px 30px;
         width: 100%;
+        font-size: 18px;
         & span {
             font-weight: 700;
         }
+    }
+}
+
+.inclusion {
+    &__container {
+        margin-top: 10px;
+    }
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        border: #000000 solid 1px;
+        border-radius: 5px;
+        padding: 20px 30px;
+        margin-bottom: 30px;
+        &-negative {
+            color: #FF0000;
+            border-color: #FF0000;
+        }
+    }
+    &__text {
+        font-size: 18px;
+        & span {
+            font-weight: 700;
+        }
+    }
+    &__character {
+        font-size: 40px;
+        margin: auto 0;
+        line-height: 0.5;
     }
 }
 
@@ -294,9 +360,11 @@ p {
         padding: 25px 30px;
         display: flex;
         justify-content: space-between;
+        font-size: 18px;
     }
     &__formula {
         color: #808080;
+        font-size: 18px;
     }
 }
 
@@ -316,6 +384,7 @@ p {
         border-radius: 5px;
         padding: 25px 30px;
         display: flex;
+        font-size: 18px;
         justify-content: space-between;
     }
 }
@@ -416,6 +485,7 @@ p {
     &__content {
         width: 50%;
         padding: 0 80px;
+        margin: auto;
     }
     &__input {
         width: 100%;

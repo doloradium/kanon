@@ -632,6 +632,28 @@ p {
   height: 100px;
 }
 
+.article {
+  margin-bottom: 200px;
+  margin-top: 200px;
+}
+
+.article__container {
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 20px 30px;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.article-top {
+  margin-top: -60px;
+  margin-bottom: 100px;
+}
+
+.article__item:last-child {
+  margin-bottom: -15px;
+}
+
 .dropdown {
   float: left;
   position: relative;
@@ -808,16 +830,13 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   height: 100%;
   margin-bottom: 200px;
 }
 
 .chain-list__stripe {
   margin-left: 9px;
-  margin-right: -9px;
+  margin-right: -10px;
   display: block;
   height: auto;
   width: 1px;
@@ -835,6 +854,27 @@ p {
   margin-bottom: 0;
 }
 
+.chain-list__heading {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.chain-list__container {
+  width: 100%;
+}
+
+.chain-list__list {
+  width: 100%;
+}
+
+.chain-list__unit {
+  width: 100%;
+}
+
+.chain-list__unit:last-child {
+  margin-bottom: -15px;
+}
+
 .chain-list__marker {
   width: 20px;
   height: 12px;
@@ -848,10 +888,47 @@ p {
   border-radius: 5px;
   padding: 20px 30px;
   width: 100%;
+  font-size: 18px;
 }
 
 .chain-list__item span {
   font-weight: 700;
+}
+
+.inclusion__container {
+  margin-top: 10px;
+}
+
+.inclusion__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: #000000 solid 1px;
+  border-radius: 5px;
+  padding: 20px 30px;
+  margin-bottom: 30px;
+}
+
+.inclusion__block-negative {
+  color: #FF0000;
+  border-color: #FF0000;
+}
+
+.inclusion__text {
+  font-size: 18px;
+}
+
+.inclusion__text span {
+  font-weight: 700;
+}
+
+.inclusion__character {
+  font-size: 40px;
+  margin: auto 0;
+  line-height: 0.5;
 }
 
 .chemicals {
@@ -877,10 +954,12 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-size: 18px;
 }
 
 .chemicals__formula {
   color: #808080;
+  font-size: 18px;
 }
 
 .procedures {
@@ -907,6 +986,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 18px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1041,6 +1121,7 @@ p {
 .contacts__content {
   width: 50%;
   padding: 0 80px;
+  margin: auto;
 }
 
 .contacts__input {
