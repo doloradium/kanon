@@ -114,6 +114,11 @@ p {
     height: 100%;
 }
 
+.icon {
+    width: 100px;
+    height: 100px;
+}
+
 .dropdown {
     float: left;
     position: relative;
@@ -231,25 +236,116 @@ p {
     }
 }
 
+.hero {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+
+.chain-list {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin-bottom: 200px;
+    &__stripe {
+        margin-left: 9px;
+        margin-right: -9px;
+        display: block;
+        height:auto;
+        width: 1px;
+        background: #000000;
+    }
+    &__block {
+        display: flex;
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__marker {
+        width: 20px;
+        height: 12px;
+        background: #FF0000;
+        border-radius: 5px;
+        margin: auto 30px auto 0;
+    }
+    &__item {
+        border: #000000 solid 1px;
+        border-radius: 5px;
+        padding: 20px 30px;
+        width: 100%;
+        & span {
+            font-weight: 700;
+        }
+    }
+}
+
+.chemicals {
+    margin-bottom: 200px;
+    &__list {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 10px;
+    }
+    &__item {
+        border: 1px solid #000000;
+        border-radius: 5px;
+        padding: 25px 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__formula {
+        color: #808080;
+    }
+}
+
+.procedures {
+    margin-bottom: 200px;
+    &__list {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 10px;
+        & .chain-list__marker {
+            margin: auto 0;
+        }
+    }
+    &__item {
+        border: 1px solid #000000;
+        border-radius: 5px;
+        padding: 25px 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 .heading {
     color: white;
     font-weight: 700;
     font-size: 40px;
     margin-bottom: 20px;
     color: #000000;
-    &__subtext-top {
-        color: #FF0000;
-        border-radius: 5px;
-        font-size: 28px;
-        width: fit-content;
-        margin-bottom: 20px;
-        max-width: 700px;
-    }
-    &__subtext-bottom {
-        max-width: 500px;
+    &__subtext {
         color: #808080;
-        font-size: 20px;
-        margin-bottom: 20px;
+        font-size: 24px;
+        margin-top: -20px;
+        margin-bottom: 80px;
+        max-width: 800px;
+        &-top {
+            color: #FF0000;
+            border-radius: 5px;
+            font-size: 28px;
+            width: fit-content;
+            margin-bottom: 20px;
+            max-width: 700px;
+        }
+        &-bottom {
+            max-width: 500px;
+            color: #808080;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
     }
     &__article {
         font-size: 20px;

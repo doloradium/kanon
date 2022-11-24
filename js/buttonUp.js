@@ -1,12 +1,18 @@
 let buttonUp = document.getElementById('buttonUp')
+let buttonContacts = document.getElementById('buttonContacts')
 
-window.onscroll = () => {
+function buttonApper(button) {
     if (document.documentElement.scrollTop > 20) {
-        buttonUp.classList.remove('hidden')
+        button.classList.remove('hidden')
         setTimeout(function() {
-            buttonUp.classList.remove('opacity-0')
+            button.classList.remove('opacity-0')
         }, 10)
     } else {
-        buttonUp.classList.add('opacity-0')
+        button.classList.add('opacity-0')
     }
 }
+
+addEventListener('scroll', (event) => {
+    buttonApper(buttonUp)
+    buttonApper(buttonContacts)
+});

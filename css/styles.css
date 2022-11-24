@@ -627,6 +627,11 @@ p {
   height: 100%;
 }
 
+.icon {
+  width: 100px;
+  height: 100px;
+}
+
 .dropdown {
   float: left;
   position: relative;
@@ -789,12 +794,138 @@ p {
   border-color: #FF0000;
 }
 
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 200px;
+}
+
+.chain-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  margin-bottom: 200px;
+}
+
+.chain-list__stripe {
+  margin-left: 9px;
+  margin-right: -9px;
+  display: block;
+  height: auto;
+  width: 1px;
+  background: #000000;
+}
+
+.chain-list__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.chain-list__block:last-child {
+  margin-bottom: 0;
+}
+
+.chain-list__marker {
+  width: 20px;
+  height: 12px;
+  background: #FF0000;
+  border-radius: 5px;
+  margin: auto 30px auto 0;
+}
+
+.chain-list__item {
+  border: #000000 solid 1px;
+  border-radius: 5px;
+  padding: 20px 30px;
+  width: 100%;
+}
+
+.chain-list__item span {
+  font-weight: 700;
+}
+
+.chemicals {
+  margin-bottom: 200px;
+}
+
+.chemicals__list {
+  display: -ms-grid;
+  display: grid;
+  gap: 30px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  margin-top: 10px;
+}
+
+.chemicals__item {
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 25px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.chemicals__formula {
+  color: #808080;
+}
+
+.procedures {
+  margin-bottom: 200px;
+}
+
+.procedures__list {
+  display: -ms-grid;
+  display: grid;
+  gap: 30px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  margin-top: 10px;
+}
+
+.procedures__list .chain-list__marker {
+  margin: auto 0;
+}
+
+.procedures__item {
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 25px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .heading {
   color: white;
   font-weight: 700;
   font-size: 40px;
   margin-bottom: 20px;
   color: #000000;
+}
+
+.heading__subtext {
+  color: #808080;
+  font-size: 24px;
+  margin-top: -20px;
+  margin-bottom: 80px;
+  max-width: 800px;
 }
 
 .heading__subtext-top {
