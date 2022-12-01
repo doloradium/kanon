@@ -10,6 +10,10 @@ body {
     flex-direction: column;
   }
 
+.footer {
+    flex-shrink: 0;
+  }
+
 a {
     text-decoration: none;
     transition: 0.5s;
@@ -110,8 +114,9 @@ p {
 
 .logo {
     display: block;
-    width: 50px;
+    width: 65px;
     border-radius: 5px;
+    margin-top: -7px;
     &__footer {
         width: 60px;
     }
@@ -130,26 +135,27 @@ p {
     float: left;
     &__button {
         border: none;
-        background: #FF0000;
         font-weight: 700;
         display: block;
-        width: 120px;
         text-align: center;
-        color: #FFFFFF;
         padding: 9px 0;
         margin-top: -10px;
         cursor: pointer;
         transition: 0.5s;
         border-radius: 5px;
+        color: #000000;
+        &-index {
+            color: #FFFFFF;
+        }
         &:hover {
-            color: #000000;
+            color: #FF0000;
             transition: 0.5s;
         }
     }
     &__block {
         background: #FF0000;
         border-radius: 5px;
-        padding: 0 15px;
+        padding: 0 20px;
     }
     &__arrow {
         width: 0; 
@@ -189,6 +195,9 @@ p {
 }
 
 .header {
+    &-withImage {
+        background: linear-gradient(360deg, #000000AD, #000000AD), url(../img/hero.jpg) center center / cover no-repeat;
+    }
     &__top {
         display: flex;
         justify-content: space-between;
@@ -196,7 +205,7 @@ p {
         padding-top: 30px;
     }
     &__navbar {
-        width: 70%;
+        width: 60%;
         min-width: 500px;
         margin-top: 10px;
         display: flex;
@@ -210,20 +219,25 @@ p {
     &__main {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 80px;
+        margin-top: 100px;
     }
     &__phone {
         font-size: 18px;
         color: #000000;
+        &-index {
+            color: #FFFFFF;
+        }
     }
     &__email {
         font-size: 12px;
         color: #000000;
+        &-index {
+            color: #FFFFFF;
+        }
     }
     &__form {
         width: 45%;
-        border: 1px solid #000000;
-        padding: 20px 30px;
+        padding: 0 30px;
         border-radius: 5px;
     }
     &__text {
@@ -231,11 +245,13 @@ p {
     }
     &__hero {
         margin: 100px 0;
+        padding-bottom: 100px;
     }
     &__categories {
         display: grid;
         gap: 30px;
         grid-template-columns: repeat(3, 1fr);
+        margin-top: 50px;
         &-radio {
             grid-template-columns: repeat(4, 1fr);
         }
@@ -250,6 +266,13 @@ p {
         display: flex;
         justify-content: center;
         align-items: center;
+        &-index {
+            background: #ECECECCE;
+            color: #000000;
+            &:hover {
+                color: #FF0000;
+            }
+        }
         &:hover {
             color: #000000;
         }
@@ -257,7 +280,8 @@ p {
 }
 
 .companies {
-    margin-bottom: 100px;
+    margin: 0 auto 100px;
+    max-width: 850px;
     &__list {
         display: flex;
         justify-content: space-between;
@@ -266,6 +290,46 @@ p {
         display: block;
         object-fit: contain;
         height: 60px;
+    }
+}
+
+.experience {
+    margin-bottom: 100px;
+    &__article {
+        font-weight: 700;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    &__container {
+        background: #ECECEC;
+        width: 100%;
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 20px;
+        }
+        &-white {
+            background: #FFFFFF;
+        }
+    }
+    &__image {
+        border-radius: 5px;
+        width: 30%;
+        object-fit: cover;
+        height: 200px;
+    }
+    &__heading {
+        font-weight: 700;
+    }
+    &__text {
+        font-size: 18px;
+    }
+    &__block {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
     }
 }
 
@@ -422,6 +486,10 @@ p {
     &__text {
         text-align: center;
     }
+    &__index {
+        max-width: 800px;
+        margin: 0 auto 50px;
+    }
 }
 
 .article {
@@ -462,11 +530,10 @@ p {
 }   
 
 .heading {
-    color: white;
     font-weight: 700;
     font-size: 40px;
     margin-bottom: 20px;
-    color: #000000;
+    color: #FFFFFF;
     &__subtext {
         color: #808080;
         font-size: 24px;
@@ -483,7 +550,7 @@ p {
         }
         &-bottom {
             max-width: 500px;
-            color: #808080;
+            color: #FFFFFF;
             font-size: 20px;
             margin-bottom: 20px;
         }
@@ -492,7 +559,14 @@ p {
         font-size: 20px;
         font-weight: 700;
         margin-bottom: 20px;
-        margin-left: 30px;
+        text-align: center;
+        &-side {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        &-index {
+            margin-left: 30px;
+        }
         &-right {
             margin-left: 0;
             margin-right: 30px;
@@ -537,6 +611,9 @@ p {
 
 .main {
     flex: 1 0 auto;
+    &-index {
+        margin-top: 100px;
+    }
     &__heading {
         display: flex;
         &-right {
@@ -558,6 +635,7 @@ p {
     &__heading {
         text-align: center;
         font-size: 20px;
+        color: #FFFFFF;
     }
     &__content {
         width: 50%;
@@ -570,15 +648,15 @@ p {
         padding: 15px;
         border: none;
         outline: none;
-        background: #ECECEC;
+        background: #ECECECCE;
         border-radius: 5px;
     }
     &__paragraph {
         font-size: 14px;
-        color: #808080;
+        color: #FFFFFF;
         text-align: center;
         max-width: 180px;
-        margin: 5px auto 0;
+        margin: 10px auto 0;
         line-height: 1.3;
 
     }

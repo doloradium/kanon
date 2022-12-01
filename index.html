@@ -10,7 +10,7 @@
     <title>Канон</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header header-withImage">
         <div class="wrapper">
             <div class="header__top">
                 <div class="logo__container">
@@ -20,7 +20,7 @@
                 </div>
                 <nav class="header__navbar">
                     <div href="#" class="dropdown">
-                        <a class="dropdown__button">ЭКО</a>
+                        <a class="dropdown__button dropdown__button-index">ЭКО</a>
                         <div class="dropdown__content hidden opacity-0 z-index-99">
                             <div class="dropdown__arrow"></div>
                             <div class="dropdown__block">
@@ -30,7 +30,7 @@
                         </div>
                     </div>
                     <div href="#" class="dropdown">
-                        <a class="dropdown__button" href="radio.html">РАДИО</a>
+                        <a class="dropdown__button dropdown__button-index" href="radio.html">РАДИО</a>
                         <div class="dropdown__content hidden opacity-0 z-index-99">
                             <div class="dropdown__arrow"></div>
                             <div class="dropdown__block">
@@ -42,7 +42,7 @@
                         </div>
                     </div>
                     <div href="#" class="dropdown">
-                        <a class="dropdown__button">ПРТО</a>
+                        <a class="dropdown__button dropdown__button-index">ПРТО</a>
                         <div class="dropdown__content hidden opacity-0 z-index-99">
                             <div class="dropdown__arrow"></div>
                             <div class="dropdown__block">
@@ -52,7 +52,7 @@
                         </div>
                     </div>
                     <div href="#" class="dropdown">
-                        <a class="dropdown__button">ПАТ</a>
+                        <a class="dropdown__button dropdown__button-index">ПАТ</a>
                         <div class="dropdown__content hidden opacity-0 z-index-99">
                             <div class="dropdown__arrow"></div>
                             <div class="dropdown__block">
@@ -62,7 +62,7 @@
                         </div>
                     </div>
                     <div href="#" class="dropdown">
-                        <a class="dropdown__button">ПРИЕМКА</a>
+                        <a class="dropdown__button dropdown__button-index">ПРИЕМКА</a>
                         <div class="dropdown__content hidden opacity-0 z-index-99">
                             <div class="dropdown__arrow"></div>
                             <div class="dropdown__block">
@@ -71,32 +71,14 @@
                         </div>
                     </div>
                     <div href="#" class="dropdown">
-                        <a class="dropdown__button">КОНТАКТЫ</a>
+                        <a class="dropdown__button dropdown__button-index">КОНТАКТЫ</a>
                     </div>
                 </nav>
                 <div class="header__contacts">
-                    <a href="tel:+74956163660" class="header__phone">+7 (495) 616-36-60</a>
-                    <a href="mailto:info@kanon-corp.ru" class="header__email">info@kanon-corp.ru</a>
+                    <a href="tel:+74956163660" class="header__phone header__phone-index">+7 (495) 616-36-60</a>
+                    <a href="mailto:info@kanon-corp.ru" class="header__email header__email-index">info@kanon-corp.ru</a>
                 </div>
             </div>
-        </div>
-    </header>
-    <main class="main">
-        <a href="#" id="buttonUp" class="button__top hidden opacity-0">
-            <img class="button__image" src="img/triangle.png" alt="Arrow up">
-        </a>
-        <!-- сделать навбар ховер серым, а пребывание на странице красным -->
-        <!-- сделать меньше и с выдвижением-->
-        <div id="buttonContacts" class="button__container hidden opacity-0">
-            <a href="https://t.me/dolori" class="button__socials button__socials-telegram">
-                <img class="button__image-contacts" src="img/telegram.png" alt="Telegram">
-            </a>
-            <a href="https://t.me/dolori" class="button__socials button__socials-whatsapp">
-                <img class="button__image-contacts" src="img/whatsapp.png" alt="Whatsapp">
-            </a>
-        </div>
-        <!-- сделать меньше и с выдвижением-->
-        <div class="wrapper">
             <section class="header__hero">
                 <div class="header__container">
                     <div class="header__main">
@@ -115,18 +97,36 @@
                     </div>
                 </div>
                 <div class="header__categories">
-                    <a href="#" class="header__item">ПЕРЕПЛАНИРОВКА</a>
-                    <a href="#" class="header__item">СЭЗ (ЭКО)</a>
-                    <a href="#" class="header__item">ПРТО</a>
-                    <a href="#" class="header__item">ПАТ</a>
-                    <a href="#" class="header__item">ПРИЕМКА</a>
-                    <a href="radio.html" class="header__item">РАДИОЛОГИЯ</a>
+                    <a href="#" class="header__item header__item-index">ПЕРЕПЛАНИРОВКА</a>
+                    <a href="#" class="header__item header__item-index">СЭЗ (ЭКО)</a>
+                    <a href="#" class="header__item header__item-index">ПРТО</a>
+                    <a href="#" class="header__item header__item-index">ПАТ</a>
+                    <a href="#" class="header__item header__item-index">ПРИЕМКА</a>
+                    <a href="radio.html" class="header__item header__item-index">РАДИОЛОГИЯ</a>
                 </div>
             </section>
+        </div>
+    </header>
+    <main class="main main-index">
+        <a href="#" id="buttonUp" class="button__top hidden opacity-0">
+            <img class="button__image" src="img/triangle.png" alt="Arrow up">
+        </a>
+        <!-- сделать навбар ховер серым, а пребывание на странице красным -->
+        <!-- сделать меньше и с выдвижением-->
+        <div id="buttonContacts" class="button__container hidden opacity-0">
+            <a href="https://t.me/dolori" class="button__socials button__socials-telegram">
+                <img class="button__image-contacts" src="img/telegram.png" alt="Telegram">
+            </a>
+            <a href="https://t.me/dolori" class="button__socials button__socials-whatsapp">
+                <img class="button__image-contacts" src="img/whatsapp.png" alt="Whatsapp">
+            </a>
+        </div>
+        <!-- сделать меньше и с выдвижением-->
+        <div class="wrapper">
             <section class="about">
                 <div class="main__heading">
                     <img class="arrow" src="img/arrow-right.png" alt="Arrow">
-                    <h4 class="heading__article">О НАШЕЙ КОМПАНИИ</h4>
+                    <h4 class="heading__article heading__article-index">О НАШЕЙ КОМПАНИИ</h4>
                 </div>
                 <div class="about__content">
                     <div class="about__block">
@@ -147,11 +147,64 @@
                     </div>
                 </div>
             </section>
-            <section class="companies">
-                <div class="main__heading">
-                    <img class="arrow" src="img/arrow-right.png" alt="Arrow">
-                    <h4 class="heading__article">МЫ СДЕЛАЛИ ЭТО ДЛЯ</h4>
+        </div>
+        <section class="experience">
+            <h4 class="experience__article">БОЛЕЕ 14 ЛЕТ ПРОВОДИМ</h4>
+            <div class="trust trust__index">
+                <div class="trust__item">
+                    <img src="/img/ruler.png" alt="Ruler" class="trust__icon">
+                    <div class="trust__text">Измерения</div>
                 </div>
+                <div class="trust__item">
+                    <img src="/img/glass.png" alt="Ruler" class="trust__icon">
+                    <div class="trust__text">Исследования</div>
+                </div>
+                <div class="trust__item">
+                    <img src="/img/expertiese.png" alt="Ruler" class="trust__icon">
+                    <div class="trust__text">Экспертизы</div>
+                </div>
+                <div class="trust__item">
+                    <img src="/img/consulting.png" alt="Ruler" class="trust__icon">
+                    <div class="trust__text">Консультации</div>
+                </div>
+            </div>
+            <div class="experience__container">
+                <div class="wrapper">
+                    <div class="experience__container-inner">
+                        <img src="img/lab.jpg" alt="Picture" class="experience__image">
+                        <div class="experience__block">
+                            <h5 class="experience__heading">Опыт</h5>
+                            <p class="experience__text">Мы работаем как с бюджетными, так и с коммерческими организациями, плодотворно сотрудничая многие годы</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="experience__container experience__container-white">
+                <div class="wrapper">
+                    <div class="experience__container-inner">
+                        <div class="experience__block">
+                            <h5 class="experience__heading">Без посредников</h5>
+                            <p class="experience__text">Канон - это и лабораторный центр, и экспертная организация. Это позволяет нам оказывать нашим клиентам услуги "под ключ", без необходимости обращаться куда-то ещё</p>
+                        </div>
+                        <img src="img/lab.jpg" alt="Picture" class="experience__image">
+                    </div>
+                </div>
+            </div>
+            <div class="experience__container">
+                <div class="wrapper">
+                    <div class="experience__container-inner">
+                        <img src="img/lab.jpg" alt="Picture" class="experience__image">
+                        <div class="experience__block">
+                            <h5 class="experience__heading">Качество</h5>
+                            <p class="experience__text">С целью контроля качества наших профессиональных навыков и наших бизнес процессов, россаккредитация раз в два года проводит проверку, и только после её прохождения лаборатория или экспертный центр имеют право работать дальше</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="wrapper">
+            <section class="companies">
+                <h4 class="experience__article">МЫ СДЕЛАЛИ ЭТО ДЛЯ</h4>
                 <div class="companies__list">
                     <img class="companies__item" src="img/mts.png" alt="MTS">
                     <img class="companies__item" src="img/zhukovskiy.png" alt="Airport">
@@ -160,6 +213,7 @@
             </section>
         </div>
         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A587c8305d29bbb4aedd09868f9886440ca5f92b1359d51999f8c6bc88012bf9e&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+        <div class="push"></div>
     </main>
     <footer class="footer">
         <div class="wrapper">
