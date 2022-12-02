@@ -237,9 +237,15 @@ p {
         }
     }
     &__form {
+        border: 1px solid black;
+        height: fit-content;
+        padding: 30px;
         width: 45%;
-        padding: 0 30px;
         border-radius: 5px;
+        &-index {
+            padding: 0 30px;
+            border: none;
+        }
     }
     &__text {
         width: 50%;
@@ -481,9 +487,12 @@ p {
         } 
     }
     &__item {
+        &-index {
+            margin-bottom: 50px;
+        }
         flex-basis: 50%;
         display: flex;
-        margin-bottom: 60px;
+        margin-bottom: 90px;
         flex-direction: column;
     }
     &__icon {
