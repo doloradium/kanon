@@ -283,12 +283,21 @@ p {
         &-index {
             background: #ECECECCE;
             color: #000000;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             &:hover {
                 color: #FF0000;
+                background: #FFFFFF;
             }
         }
         &:hover {
             color: #000000;
+            background: #FFFFFF;
         }
     }
 }
