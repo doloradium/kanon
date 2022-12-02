@@ -860,7 +860,7 @@ p {
 
 .companies {
   margin: 0 auto 100px;
-  max-width: 850px;
+  width: 100%;
 }
 
 .companies__list {
