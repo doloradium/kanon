@@ -38,6 +38,10 @@ p {
     transition: all 0.2s linear; 
 }  
 
+.bold {
+    font-weight: 700;
+}
+
 .wrapper {
     max-width: 1180px;
     padding: 0 20px;
@@ -168,7 +172,6 @@ p {
         padding: 15px 20px;
         background: #FF0000;
         border-radius: 5px;
-        box-shadow: 0 0 30px rgba(0,0,0,.2);
         box-sizing: border-box;
         visibility: hidden;
         opacity: 0;
@@ -256,6 +259,14 @@ p {
         margin-top: 50px;
         &-radio {
             grid-template-columns: repeat(4, 1fr);
+            margin-bottom: 50px;
+        }
+        &-prto {
+            grid-template-columns: repeat(2, 1fr);
+            margin-bottom: 50px;
+        }
+        &-priemka {
+            grid-template-columns: repeat(1, 1fr);
             margin-bottom: 50px;
         }
     }
@@ -401,17 +412,21 @@ p {
         &:last-child {
             margin-bottom: -20px;
         }
+        &-padding {
+            padding-bottom: 20px;
+            margin-bottom: 0;
+        }
     }
     &__paragraph {
         font-size: 18px;
-        &:last-child {
-            margin-bottom: 20px;
-        }
     }
     &__image {
         object-fit: cover;
         width: 100%;
         border-radius: 5px;
+    }
+    &__number {
+        margin-bottom: 20px;
     }
 }   
 
@@ -592,5 +607,11 @@ p {
         padding: 0 0 15px;
         margin: auto;
         color: #FFFFFF;
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        width: 385px;
+        margin: auto;
     }
 }
