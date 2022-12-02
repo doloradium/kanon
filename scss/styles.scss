@@ -28,6 +28,16 @@ p {
     font-size: 18px;
 }
 
+.hidden {
+    display: none;
+    cursor: default;
+}
+.opacity-0 {
+    opacity: 0;
+    cursor: default;
+    transition: all 0.2s linear; 
+}  
+
 .wrapper {
     max-width: 1180px;
     padding: 0 20px;
