@@ -123,8 +123,11 @@ p {
     width: 65px;
     border-radius: 5px;
     margin-top: -7px;
-    @media screen and (max-width:500px) {
+    @media screen and (max-width: 500px) {
         width: 50px;
+    }
+    @media screen and (max-width: 320px) {
+        width: 35px;
     }
 }
 
@@ -362,7 +365,7 @@ p {
     border-top: 1px solid #C1C1C1;
     padding-top: 20px;
     @media screen and (max-width: 576px) {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
         margin-top: -50px;
     }
     &-index {
@@ -390,6 +393,9 @@ p {
         @media screen and (max-width: 375px) {
             margin-bottom: 50px;
             height: 30px;
+            &:last-child {
+                margin-bottom: 30px;
+            }
         }
     }
 }
@@ -403,6 +409,7 @@ p {
         margin-bottom: 40px;
         @media screen and (max-width: 576px) {
             margin-top: -70px;
+            font-size: 4vw;
         }
     }
     &__container {
@@ -436,6 +443,9 @@ p {
     }
     &__heading {
         font-weight: 700;
+        @media screen and (max-width: 576px) {
+            font-size: 4vw;
+        }
     }
     &__text {
         font-size: 18px;
@@ -486,6 +496,10 @@ p {
             @media screen and (max-width: 600px) {
                 flex-basis: 50%;
             }
+            @media screen and (max-width: 280px) {
+                flex-basis: 100%;
+                margin-bottom: 30px;
+            }
         }
         display: flex;
         margin-bottom: 90px;
@@ -494,9 +508,15 @@ p {
     &__icon {
         width: 50px;
         margin: 0 auto 15px;
+        @media screen and (max-width: 400px) {
+            width: 35px;
+        }
     }
     &__text {
         text-align: center;
+        @media screen and (max-width: 400px) {
+            font-size: 4vw;
+        }
     }
     &__index {
         margin: 0 auto 50px;
@@ -603,6 +623,9 @@ p {
         font-weight: 700;
         margin-bottom: 20px;
         text-align: center;
+        @media screen and (max-width: 576px) {
+            font-size: 4vw;
+        }
         &-side {
             margin-top: 50px;
             margin-bottom: 50px;
