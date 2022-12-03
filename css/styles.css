@@ -902,6 +902,7 @@ p {
 .companies {
   margin: 0 auto 100px;
   max-width: 800px;
+<<<<<<< HEAD
   border-top: 1px solid #C1C1C1;
   padding-top: 20px;
 }
@@ -909,6 +910,9 @@ p {
 .companies-index {
   border-top: 0;
   padding-top: 0;
+=======
+  border-top: black solid;
+>>>>>>> 57eb173367cd495ee6fee1089c3243e3d8c67bc4
 }
 
 .companies__list {
