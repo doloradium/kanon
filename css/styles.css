@@ -902,6 +902,7 @@ p {
 .companies {
   margin: 0 auto 100px;
   max-width: 800px;
+  border-top: black solid;
 }
 
 .companies__list {
