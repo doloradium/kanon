@@ -902,6 +902,13 @@ p {
 .companies {
   margin: 0 auto 100px;
   max-width: 800px;
+  border-top: 1px solid #C1C1C1;
+  padding-top: 20px;
+}
+
+.companies-index {
+  border-top: 0;
+  padding-top: 0;
 }
 
 .companies__list {
@@ -1088,6 +1095,10 @@ p {
 
 .article__number {
   margin-bottom: 20px;
+}
+
+.article__item {
+  list-style-type: disc;
 }
 
 .heading {
