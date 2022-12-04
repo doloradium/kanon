@@ -42,6 +42,13 @@ p {
     font-weight: 700;
 }
 
+.margin-bottom {
+    margin-bottom: -15px;
+    @media screen and (max-width: 768px) {
+        margin-bottom: -25px;
+    }
+}
+
 .wrapper {
     max-width: 1180px;
     padding: 0 20px;
@@ -539,9 +546,6 @@ p {
         @media screen and (max-width: 740px) {
             flex-basis: 50%;
             margin-bottom: 50px;
-        }
-        @media screen and (max-width: 430px) {
-            flex-basis: 100%;
         }
         &-index {
             margin-bottom: 50px;
