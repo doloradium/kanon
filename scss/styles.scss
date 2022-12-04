@@ -580,11 +580,14 @@ p {
         width: 100%;
         padding: 20px 0 30px;
         margin-bottom: 30px;
+        @media screen and (max-width: 576px) {
+            margin-bottom: 20px;
+        }
     }
     &__block {
         font-size: 18px;
-        @media screen and (max-width: 576px) {
-            font-size: 3vw;
+        @media screen and (max-width: 450px) {
+            font-size: 4vw;
         }
         &:last-child {
             margin-bottom: -20px;
@@ -596,8 +599,8 @@ p {
     }
     &__paragraph {
         font-size: 18px;
-        @media screen and (max-width: 576px) {
-            font-size: 3vw;
+        @media screen and (max-width: 450px) {
+            font-size: 4vw;
         }
 
     }
@@ -672,6 +675,8 @@ p {
             margin-bottom: 50px;
             @media screen and (max-width: 576px) {
                 font-size: 3.5vw;
+                margin: 30px auto;
+                display: block;
             }
         }
         &-index {
