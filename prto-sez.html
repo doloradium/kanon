@@ -87,15 +87,37 @@
                     <a href="tel:+74956163660" class="header__phone">+7 (495) 616-36-60</a>
                     <a href="mailto:info@kanon-corp.ru" class="header__email">info@kanon-corp.ru</a>
                 </div>
+                <div class="burger__button">
+                    <span class="span-side"></span>
+                    <span class="span-side"></span>
+                    <span class="span-side"></span>
+                </div>
             </div>
         </div>
     </header>
     <main class="main">
+        <div class="burger">
+            <div class="wrapper">
+                <nav class="burger__container">
+                    <div class="logo__container">
+                        <a class="logo__link" href="#">
+                            <img class="logo" src="img/logo.png" alt="Logo">
+                        </a>
+                    </div>
+                   <ul class="burger__block">
+                    <li class="burger__item"><a class="burger__link" href="redevelopment.html">ПЕРЕПЛАНИРОВКА</a></li>
+                    <li class="burger__item"><a class="burger__link" href="eco.html">СЭЗ (ЭКО)</a></li>
+                    <li class="burger__item"><a class="burger__link" href="prto.html">ПРТО</a></li>
+                    <li class="burger__item"><a class="burger__link" href="pat.html">ПАТ</a></li>
+                    <li class="burger__item"><a class="burger__link" href="priemka.html">ПРИЕМКА</a></li>
+                    <li class="burger__item"><a class="burger__link" href="radio.html">РАДИОЛОГИЯ</a></li>
+                   </ul>
+                </nav>
+            </div>
+        </div>
         <a href="#" id="buttonUp" class="button__top hidden opacity-0">
             <img class="button__image" src="img/triangle.png" alt="Arrow up">
         </a>
-        <!-- сделать навбар ховер серым, а пребывание на странице красным -->
-        <!-- сделать меньше и с выдвижением-->
         <div id="buttonContacts" class="button__container hidden opacity-0">
             <a href="https://t.me/dolori" class="button__socials button__socials-telegram">
                 <img class="button__image-contacts" src="img/telegram.png" alt="Telegram">
@@ -104,7 +126,6 @@
                 <img class="button__image-contacts" src="img/whatsapp.png" alt="Whatsapp">
             </a>
         </div>
-        <!-- сделать меньше и с выдвижением-->
         <div class="wrapper">
             <h2 class="heading__article heading__article-side">САНИТАРНО ЭПИДЕМИОЛОГИЧЕСКОЕ ЗАКЛЮЧЕНИЕ ПРТО В МОСКВЕ И МО В КОРОТКИЕ СРОКИ</h2>
         </div>
@@ -254,5 +275,6 @@
         </div>
     </footer>
     <script src="js/buttonUp.js"></script>
+    <script src="js/burger.js"></script>
 </body>
 </html>
