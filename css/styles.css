@@ -607,6 +607,25 @@ p {
   overflow: hidden;
 }
 
+@media screen and (min-width: 1000px) {
+  .burger__button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .burger__button {
+    width: 20px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .burger__button {
+    margin-top: -5px;
+  }
+}
+
 .burger__button-active span:nth-of-type(1) {
   opacity: 0;
 }
@@ -619,8 +638,8 @@ p {
 
 .burger__button-active span:nth-of-type(3) {
   top: 50%;
-  -webkit-transform: translate(-50%, 350%) rotate(-45deg);
-          transform: translate(-50%, 350%) rotate(-45deg);
+  -webkit-transform: translate(-50%, 250%) rotate(-45deg);
+          transform: translate(-50%, 250%) rotate(-45deg);
 }
 
 .burger__button span {
@@ -636,12 +655,18 @@ p {
   transition: all 0.5s;
 }
 
+@media screen and (max-width: 480px) {
+  .burger__button span {
+    width: 20px;
+  }
+}
+
 .burger__button span:nth-of-type(2) {
-  top: calc(50% - 10px);
+  top: calc(50% - 8px);
 }
 
 .burger__button span:nth-of-type(3) {
-  top: calc(50% - 20px);
+  top: calc(50% - 15px);
 }
 
 .button {
@@ -895,7 +920,7 @@ p {
   text-align: center;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1000px) {
   .header__navbar {
     display: none;
   }
@@ -912,6 +937,12 @@ p {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+@media screen and (max-width: 1000px) {
+  .header__contacts {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -979,7 +1010,7 @@ p {
 }
 
 .header__form-index {
-  padding: 0 30px;
+  padding: 0;
   border: none;
 }
 
