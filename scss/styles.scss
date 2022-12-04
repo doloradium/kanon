@@ -583,6 +583,9 @@ p {
     }
     &__block {
         font-size: 18px;
+        @media screen and (max-width: 576px) {
+            font-size: 3vw;
+        }
         &:last-child {
             margin-bottom: -20px;
         }
@@ -593,6 +596,10 @@ p {
     }
     &__paragraph {
         font-size: 18px;
+        @media screen and (max-width: 576px) {
+            font-size: 3vw;
+        }
+
     }
     &__image {
         object-fit: cover;
@@ -613,7 +620,7 @@ p {
     margin-bottom: 20px;
     color: #FFFFFF;
     @media screen and (max-width: 576px) {
-        font-size: 7vw;
+        font-size: 6vw;
         margin-bottom: 10px;
     }
     &__subtext {
@@ -663,6 +670,9 @@ p {
         &-side {
             margin-top: 50px;
             margin-bottom: 50px;
+            @media screen and (max-width: 576px) {
+                font-size: 3.5vw;
+            }
         }
         &-index {
             margin-left: 30px;
