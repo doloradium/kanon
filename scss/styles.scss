@@ -314,14 +314,36 @@ p {
         &-radio {
             grid-template-columns: repeat(4, 1fr);
             margin-bottom: 50px;
+            @media screen and (max-width: 992px) {
+                width: 100%;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @media screen and (max-width: 750px) {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            @media screen and (max-width: 450px) {
+                font-size: 3vw;
+                padding: 10px;
+            }
         }
         &-prto {
             grid-template-columns: repeat(2, 1fr);
             margin-bottom: 50px;
+            @media screen and (max-width: 750px) {
+                width: 100%;
+                grid-template-columns: repeat(1, 1fr);
+            }
+            @media screen and (max-width: 450px) {
+                font-size: 3vw;
+            }
         }
         &-priemka {
             grid-template-columns: repeat(1, 1fr);
             margin-bottom: 50px;
+            @media screen and (max-width: 450px) {
+                font-size: 3vw;
+                padding: 10px;
+            }
         }
     }
     &__item {
@@ -334,6 +356,9 @@ p {
         display: flex;
         justify-content: center;
         align-items: center;
+        @media screen and (max-width: 450px) {
+            font-size: 3vw;
+        }
         &-index {
             background: #ECECECCE;
             color: #000000;
