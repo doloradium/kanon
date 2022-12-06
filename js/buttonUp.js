@@ -15,4 +15,4 @@ function buttonApper(button) {
 addEventListener('scroll', (event) => {
     buttonApper(buttonUp)
     buttonApper(buttonContacts)
-});
+})
